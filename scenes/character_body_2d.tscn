@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwpj2atp6isf3"]
+
+[ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="1_to40h"]
+[ext_resource type="Texture2D" uid="uid://gfo4w8l0kkb3" path="res://Terrain/Ninja Frog/4989a5bf-daa1-4522-8331-06cf3f7e0994.png" id="2_ttm76"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty144"]
+size = Vector2(65.125, 115.125)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_to40h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(46.1563, 53.3672)
+scale = Vector2(0.182812, 0.195443)
+texture = ExtResource("2_ttm76")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(47.4375, 52.4375)
+shape = SubResource("RectangleShape2D_ty144")
